@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>q
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Clone</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./Images/Spotify_favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Background Particles -->
+    <div id="particles-js"></div>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <img src="Spotify Logo.jpg" alt="Spotify Logo" />
+        </div>
+        <ul class="nav-items">
+            <li><a href="#playlist">Playlist</a></li>
+            <li><a href="#favorites">Favorites</a></li>
+            <li><a href="#recent">Recent</a></li>
+            <li>
+                <form class="search-bar" action="#">
+                    <input type="text" placeholder="Search songs..." />
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </li>
+            <li><button class="sign-in-btn">Sign In</button></li>
+        </ul>
+    </nav>
+    
+
+    <!-- Music Cards -->
+    <div class="container">
+        <div class="text">
+            <h2>Music For Everyone</h2>
+        </div>
+
+        <div class="card">
+            <div class="items">
+                <img src="Bol Do Na Zara.jpg" alt="Bol Do Na Zara" />
+                <p>Bol Do Na Zara</p>
+                <span><i id="1" class="fa-solid audio fa-circle-play"></i></span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="items">
+                <img src="Ghungroo.jpg" alt="Ghungroo" />
+                <p>Ghungroo</p>
+                <span><i id="2" class="fa-solid audio fa-circle-play"></i></span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="items">
+                <img src="img3.jpg" alt="Main Rang Sharbaton Ka" />
+                <p>Main Rang Sharbaton Ka</p>
+                <span><i id="3" class="fa-solid audio fa-circle-play"></i></span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="items">
+                <img src="img2.jpg" alt="Barsaat" />
+                <p>Barsaat</p>
+                <span><i id="4" class="fa-solid audio fa-circle-play"></i></span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="items">
+                <img src="img1.jpg" alt="Paniyon Sa" />
+                <p>Paniyon Sa</p>
+                <span><i id="5" class="fa-solid audio fa-circle-play"></i></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seek Bar and Controls -->
+    <div class="seekBar">
+        <input type="range" id="range" value="0" min="0" max="100">
+        <div class="content">
+            <img id="gif" src="playing.gif" alt="Now Playing Animation" style="opacity: 0;">
+            <p id="songName">Bol Do Na Zara</p>
+            <i id="masterBtn" class="fa-solid fa-circle-play"></i>
+        </div>
+    </div>
+    <div id="audioPlayer">
+        <button id="playPauseBtn">Play</button>
+        <span id="currentTime">0:00</span> / <span id="duration">4:00</span>
+      </div>
+      <audio id="audio" src="your-audio-file.mp3"></audio>
+      
+
+    <!-- Music Visualizer -->
+    <canvas id="visualizer"></canvas>
+    
+        <div id="background-animation"></div>
+        <!-- Rest of your content -->
+    
+    
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
